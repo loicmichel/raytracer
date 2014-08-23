@@ -18,8 +18,11 @@
 		var scene = {
 			items: {},
 			ligths: {},
-			camera: new Camera()
+			camera: new Camera(new Vector(), new Vector())
 		}
+
+		var rayTracer = new RayTracer();
+    	return rayTracer.render(scene, context, 256, 256);
 	}
 </script>
 </body>
